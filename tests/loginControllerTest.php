@@ -146,7 +146,7 @@ class loginControllerTest extends TestCase {
     public function testRegistrationFormSubmission() {
         $this->visit('/register')
                 ->type('php unit testing', 'name')
-                ->type('phpunit1lt@gmail.com', 'email')
+                ->type('phpunit1lt2@gmail.com', 'email')
                 ->type('laravel', 'password')
                 ->type('laravel', 'password_confirmation')
                 ->press('Register')
@@ -160,8 +160,8 @@ class loginControllerTest extends TestCase {
      */
     public function testLoginFormSubmission() {
         $this->visit('/login')
-                ->type('sreenath.mm89@gmail.com', 'email')
-                ->type('sreenath', 'password')
+                ->type('ltsociallogin@gmail.com', 'email')
+                ->type('Admin123', 'password')
                 ->press('Sign in!')
                 ->seePageIs('/');
     }
